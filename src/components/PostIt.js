@@ -1,8 +1,18 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './PostIt.css';
 
 class PostIt extends React.Component {
+  static propTypes = {
+    text: PropTypes.string.isRequired,
+    finished: PropTypes.bool,
+  }
+
+  static defaultProps = {
+    finished: false
+  }
+
   render() {
     let className = 'post-it';
     if (this.props.finished) {

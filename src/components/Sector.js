@@ -1,8 +1,16 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import PostIt from './PostIt';
+
 import './Sector.css';
 
 class Sector extends React.Component {
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    messages: PropTypes.array.isRequired,
+  }
+
   render() {
     const postIts = this.props.messages.map((message, key) => {
       return (
