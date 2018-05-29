@@ -1,23 +1,29 @@
 import React from 'react';
 import Sector from './Sector';
 
-const sectorNames = [
-  "More Of",
-  "Less Of",
-  "Challenges",
-  "Positive Experiences",
-];
-
 class Board extends React.Component {
+  getMessages(sectorName) {
+    return this.props.retroData.filter((message) => {
+      return message.sector === sectorName;
+    });
+  }
+
   render() {
+    const sectors = this.props.sectorNames.map((sectorName, key) => {
+      const messages = this.getMessages(sectorName);
+      return (
+        <Sector
+          name={sectorName}
+          key={key}
+          messages={messages}
+          />
+      );
+    });
+
     return (
       <main>
         <h1>Hello from the Board component</h1>
-        {sectorNames.map((sectorName, key) => {
-          return (
-            <Sector name={sectorName} key={key}/>
-          );
-        })}
+        {sectors}
       </main>
     );
   }

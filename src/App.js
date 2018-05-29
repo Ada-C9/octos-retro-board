@@ -1,19 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Board from './components/Board';
 
+const sectorNames = [
+  "More Of",
+  "Less Of",
+  "Challenges",
+  "Positive Experiences",
+];
+
 const retroData = [
-  {sector: "more of", message: "snacks"},
-  {sector: "less of", message: "homework"},
-]
+  {sector: "More Of", text: "Snacks"},
+  {sector: "Less Of", text: "Homework"},
+];
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Board />
+        <Board
+          sectorNames={sectorNames}
+          retroData={retroData}
+          />
       </div>
     );
   }
