@@ -1,9 +1,13 @@
 .sector {
-  display: inline-block;
-  width: 45%;
-  border: 3px black solid;
+  margin: 5px;
+  border: 2px black solid;
 }
 
 .sector h2 {
   font-family: cursive;
+}
+
+.sector ul {
+  list-style-type: none;
+  padding-left: 0;
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import Sector from './Sector';
 
+import './Board.css';
+
 class Board extends React.Component {
   getMessages(sectorName) {
     return this.props.retroData.filter((message) => {
@@ -21,9 +23,11 @@ class Board extends React.Component {
     });
 
     return (
-      <main>
-        <h1>Hello from the Board component</h1>
-        {sectors}
+      <main className="board">
+        <h1>Retro Board</h1>
+        <div className="sector-list">
+          {sectors}
+        </div>
       </main>
     );
   }

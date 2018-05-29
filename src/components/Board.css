@@ -1,0 +1,4 @@
+.board .sector-list {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}

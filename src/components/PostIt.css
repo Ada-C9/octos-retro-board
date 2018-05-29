@@ -1,5 +1,6 @@
 .post-it {
   background-color: goldenrod;
+  margin: .2em;
 }
 
 .post-it.finished {
