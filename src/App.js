@@ -11,8 +11,11 @@ const sectorNames = [
 ];
 
 const retroData = [
-  {sector: "More Of", text: "Snacks"},
-  {sector: "Less Of", text: "Homework"},
+  {sector: "More Of", text: "Snacks", finished: true},
+  {sector: "Less Of", text: "Homework", finished: false},
+  {sector: "Challenges", text: "React", finished: false},
+  {sector: "Challenges", text: "JSX", finished: true},
+  {sector: "More Of", text: "Joy", finished: false},
 ];
 
 class App extends Component {

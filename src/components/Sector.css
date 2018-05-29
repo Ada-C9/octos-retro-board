@@ -1,0 +1,9 @@
+.sector {
+  display: inline-block;
+  width: 45%;
+  border: 3px black solid;
+}
+
+.sector h2 {
+  font-family: cursive;
+}

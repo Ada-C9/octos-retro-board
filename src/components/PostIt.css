@@ -1,0 +1,7 @@
+.post-it {
+  background-color: goldenrod;
+}
+
+.post-it.finished {
+  text-decoration: line-through;
+}

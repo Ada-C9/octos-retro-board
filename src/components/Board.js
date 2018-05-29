@@ -13,8 +13,8 @@ class Board extends React.Component {
       const messages = this.getMessages(sectorName);
       return (
         <Sector
-          name={sectorName}
           key={key}
+          name={sectorName}
           messages={messages}
           />
       );
